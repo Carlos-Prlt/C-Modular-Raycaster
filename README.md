@@ -1,8 +1,8 @@
-# 🕹️ C-Modular-Raycaster (SDL2)
+# C-Modular-Raycaster (SDL2)
 
 A modular 2.5D raycasting engine written in C using the SDL2 library, heavily inspired by [Lode's famous raycasting tutorial](https://lodev.org/cgtutor/raycasting.html). This project is my own version and builds upon that classic mathematical foundation, managing rendering directly at the pixel buffer level. It features a decoupled architecture, vertical pitch, and a real-time minimap overlay.
 
-## ✨ Features
+## Features
 
 * **Raycasting Rendering:** Uses the DDA (Digital Differential Analyzer) algorithm for precise wall-collision detection.
 * **Vertical Pitch:** Simulated up/down looking through horizon shifting.
@@ -10,7 +10,7 @@ A modular 2.5D raycasting engine written in C using the SDL2 library, heavily in
 * **Modular Architecture:** Organized into logical components (`input`, `player`, `render`, `globals`) for easy scaling and maintenance.
 * **FPS Independent Physics:** Movement and rotation are calculated using *delta time* (dt) for consistency across different hardware.
 
-## 🛠️ Prerequisites
+## Prerequisites
 
 To compile and run this project, you need a C compiler (e.g., `gcc`), `make`, and **SDL2** development libraries.
 
@@ -27,7 +27,7 @@ sudo apt install gcc make libsdl2-dev
 brew install sdl2
 ```
 
-## 🚀 Building and Running
+## Building and Running
 
 The project includes a pre-configured Makefile. Open your terminal in the project root and run:
 
@@ -46,7 +46,7 @@ make
 make clean
 ```
 
-## 🎮 Controls
+## Controls
 
 | Key | Action |
 | :--- | :--- |
@@ -60,7 +60,7 @@ make clean
 | **Down Arrow** | Look Down (Pitch) |
 | **ESC** | Exit Program |
 
-## 📂 Project Structure
+## Project Structure
 
 ```plaintext
 .
@@ -79,7 +79,7 @@ make clean
     └── render.c      # Raycasting logic and pixel manipulation
 ```
 
-## 📚 References & Credits
+## References & Credits
 
 * **Author:** Carlos Peralta Solís
 
